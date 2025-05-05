@@ -928,6 +928,10 @@ section,
   transition: ease-in-out 0.3s;
 }
 
+.services p {
+  font-size:21px;
+}
+
 .services .service-item p {
   line-height: 24px;
   font-size: 14px;

@@ -93,14 +93,66 @@
       <div class="container position-relative">
         <h1>Sentiment Analysis</h1>
         <p>Characterizing Developers’ Sentiments Using Large Language Models.</p>
-        <nav class="breadcrumbs">
+        <!-- <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li class="current">Sentiment Analysis</li>
           </ol>
-        </nav>
+        </nav> -->
       </div>
     </div><!-- End Page Title -->
+
+        <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up"> -->
+      <!-- <p>Sentiment Analysis (SA) has become an essential technique in Software Engineering (SE) for understanding developers’ emotions, improving collaboration, and enhancing software quality. Recent advances in Large Language Models (LLMs) have yielded more powerful approaches to natural language–processing tasks, including SA. In this project, we evaluate the effectiveness of several LLMs at performing sentiment analysis on comments from issue discussions in open‑source GitHub repositories.</p> --> 
+      <!-- </div> --> 
+
+      <div class="container">
+        <p>Sentiment Analysis (SA) has become an essential technique in Software Engineering (SE) for understanding developers’ emotions, improving collaboration, and enhancing software quality. Recent advances in Large Language Models (LLMs) have yielded more powerful approaches to natural language–processing tasks, including SA. In this project, we evaluate the effectiveness of several LLMs at performing sentiment analysis on comments from issue discussions in open‑source GitHub repositories.</p>
+        
+        <br>
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-activity icon"></i></div> -->
+              <h4><a href="" class="stretched-link">Data Extraction</a></h4>
+              <p>The process begins with the extraction phase, during which comments from GitHub issues are collected—totaling over 1.7 million tokens.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div> -->
+              <h4><a href="" class="stretched-link">Data Preprocessing</a></h4> 
+              <p>Next, the raw texts are cleaned—removing URLs, code blocks, and other noise—resulting in a reduction of over 40% in the total token count.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> --> 
+              <h4><a href="" class="stretched-link">Sentiment Classification</a></h4>
+              <p>Each comment is sent to the LLMs with a prompt that instructs the model to classify it as positive, negative, or neutral.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="" class="stretched-link">Results Visualization</a></h4>
+              <p>Sentiment scores are aggregated to generate concise visual summaries to highlight actionable insights.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
@@ -143,7 +195,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <h4><strong>Sentiment Analysis</strong></h4>
+                  <h4><strong>Sentiment Classification</strong></h4>
                   <p>Each comment is sent to the LLMs with a prompt that instructs the model to classify it as positive, negative, or neutral.</p>
                   <img src="assets/img/LLMs.png">
                 </div>
@@ -170,10 +222,15 @@
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Characterizing Developers’ Sentiments Using LLMs</h2>
+              <!-- <h2>Characterizing Developers’ Sentiments Using LLMs</h2> --> 
               <p>
-                Sentiment Analysis (SA) has become an essential technique in Software Engineering (SE) for understanding developers’ emotions, improving collaboration, and enhancing software quality. Recent advances in Large Language Models (LLMs) have yielded more powerful approaches to natural language–processing tasks, including SA. In this project, we evaluate the effectiveness of several LLMs at performing sentiment analysis on comments from issue discussions in open‑source GitHub repositories. In our most recent experiment, we selected three projects—Grafana, TensorFlow, and VSCode—and, for each, defined a set of recent releases. We then classified every comment in the issue threads and grouped the results by release.              
+                In our most recent experiment, we selected three projects—Grafana, TensorFlow, and VSCode—and defined a set of recent releases for each. We then classified every comment in the issue threads and grouped the results by release. Using the GitHub API, we extracted data from 1,803 issues and 13,608 comments, totaling <strong>1,749,254 tokens</strong> for the TensorFlow project. After data preprocessing, we achieved an average token <strong>reduction of 44.20%</strong> across all seven releases. Sentiment classification was performed with three models: <strong>GPT-4o mini, DeepSeek V3, and Gemini 2.0 Flash</strong>. Across all releases, the vast majority of comments were either <strong>neutral or positive</strong>, indicating a healthy and constructive community.
               </p>
+              <ul>
+                <li><strong>Dominance of neutral discussions</strong>, focusing on facts and technical clarifications.</li>
+                <li><strong>Strong presence of positive feedback</strong>, highlighting appreciation, collaborative problem-solving, and helpful contributions.</li>
+                <li><strong>Minority of negative sentiment</strong>, suggesting that critical feedback remains constructive and limited in scope.</li>
+              </ul>
             </div>
           </div>
 
